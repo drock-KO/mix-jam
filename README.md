@@ -30,8 +30,8 @@ https://app.lucidchart.com/invitations/accept/b3c87035-88bd-47e7-b003-8810973ffc
  - has_many :likes
  - has_many :users, through: :likes
 
- - has_many :tags, through: :track-tags
- - has_many :track-tags
+ - has_many :tags, through: :track_tags
+ - has_many :track_tags
 
 ## likesテーブル
 |Column|Type|Options|
