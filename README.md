@@ -14,13 +14,13 @@ https://app.lucidchart.com/invitations/accept/b3c87035-88bd-47e7-b003-8810973ffc
  - has_many :tracks
  - has_many :comments
  - has_many :likes, dependent: :destroy
- - has_many :liked-tracks, through: :likes, source: :track
+ - has_many :liked_tracks, through: :likes, source: :track
 
 
 ## tracksテーブル
 |Column|Type|Options|
 |------|----|-------|
-|title|string|add_index, null: false|
+|title|string|index: true, null: false|
 |data|string|null: false|
 |user_id|integer|null: false, foreign_key: true|
 
@@ -30,8 +30,8 @@ https://app.lucidchart.com/invitations/accept/b3c87035-88bd-47e7-b003-8810973ffc
  - has_many :likes
  - has_many :users, through: :likes
 
- - has_many :tags, through: :track_tags
- - has_many :track_tags
+ - has_many :tags, through: :track-tags
+ - has_many :track-tags
 
 ## likesテーブル
 |Column|Type|Options|
