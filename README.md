@@ -56,7 +56,7 @@ belongs_to :tag
 ## tagsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|add_index, unique: true|
+|name|string|index: true, unique: true|
 
 ### Association
 has_many :track-likes
