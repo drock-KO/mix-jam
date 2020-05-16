@@ -22,7 +22,7 @@ https://app.lucidchart.com/invitations/accept/b3c87035-88bd-47e7-b003-8810973ffc
 |------|----|-------|
 |title|string|index: true, null: false|
 |data|string|null: false|
-|user_id|integer|null: false, foreign_key: true|
+|user|reference|null: false|
 
 ### Association
  - belongs_to :user
