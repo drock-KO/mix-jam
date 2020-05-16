@@ -1,9 +1,12 @@
 # DB設計
 
+# ER図
+https://app.lucidchart.com/invitations/accept/b3c87035-88bd-47e7-b003-8810973ffc59
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|nickname|string|null: false, add_index|
+|nickname|string|null: false, index: true|
 |email|string|null: false, unique: true|
 |password|string|null: false|
 
