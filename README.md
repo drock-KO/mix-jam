@@ -36,8 +36,8 @@ https://app.lucidchart.com/invitations/accept/b3c87035-88bd-47e7-b003-8810973ffc
 ## likesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|track_id|integer|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
+|track|reference|null: false|
+|user|reference|null: false|
 
 ### Association
 belongs_to :user
