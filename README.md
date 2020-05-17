@@ -46,9 +46,8 @@ belongs_to :track
 ## track-tagsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|tag_id|integer|null: false, foreign_key: true|
-|track_id|integer|null: false, foreign_key: true|
-
+|tag|reference|null: false, foreign_key: true|
+|track|references|null: false, foreign_key: true|
 ### Association
 belongs_to :track
 belongs_to :tag
