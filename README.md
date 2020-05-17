@@ -59,7 +59,7 @@ belongs_to :tag
 
 ### Association
 has_many :track_likes
-has_many :tracks, through: :track-tags
+has_many :tracks, through: :track_tags
 
 ## commentsテーブル
 |Column|Type|Options|
