@@ -11,8 +11,8 @@ https://app.lucidchart.com/invitations/accept/b3c87035-88bd-47e7-b003-8810973ffc
 |password|string|null: false|
 
 ### Association
- - has_many :tracks
- - has_many :comments
+ - has_many :tracks, dependent: :destroy
+ - has_many :comments, dependent: :destroy
  - has_many :likes, dependent: :destroy
  - has_many :liked_tracks, through: :likes, source: :track
 
