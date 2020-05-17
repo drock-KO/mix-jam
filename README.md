@@ -66,8 +66,8 @@ has_many :tracks, through: :track-tags
 |Column|Type|Options|
 |------|----|-------|
 |text|string|null: false|
-|track|refernce|null: false|
-|user|reference|null: false|
+|track|refernce|null: false, foreign_key: true|
+|user|reference|null: false, foreign_key: true|
 
 ### Association
 belongs_to :user
