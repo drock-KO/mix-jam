@@ -46,7 +46,7 @@ belongs_to :track
 ## track-tagsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|tag|reference|null: false, foreign_key: true|
+|tag|references|null: false, foreign_key: true|
 |track|references|null: false, foreign_key: true|
 ### Association
 belongs_to :track
