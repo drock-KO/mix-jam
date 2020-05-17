@@ -43,7 +43,7 @@ https://app.lucidchart.com/invitations/accept/b3c87035-88bd-47e7-b003-8810973ffc
 belongs_to :user
 belongs_to :track
 
-## track-tagsテーブル
+## track_tagsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |tag|references|null: false, foreign_key: true|
