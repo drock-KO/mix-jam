@@ -58,7 +58,7 @@ belongs_to :tag
 |name|string|index: true, unique: true|
 
 ### Association
-has_many :track-likes
+has_many :track_likes
 has_many :tracks, through: :track-tags
 
 ## commentsテーブル
