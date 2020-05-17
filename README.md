@@ -27,7 +27,7 @@ https://app.lucidchart.com/invitations/accept/b3c87035-88bd-47e7-b003-8810973ffc
 ### Association
  - belongs_to :user
 
- - has_many :likes
+ - has_many :likes, dependent: :destroy
  - has_many :users, through: :likes
 
  - has_many :tags, through: :track_tags
