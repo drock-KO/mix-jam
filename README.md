@@ -22,7 +22,7 @@ https://app.lucidchart.com/invitations/accept/b3c87035-88bd-47e7-b003-8810973ffc
 |------|----|-------|
 |title|string|index: true, null: false|
 |data|string|null: false|
-|user|reference|null: false|
+|user|references|null: false|
 
 ### Association
  - belongs_to :user
@@ -36,8 +36,8 @@ https://app.lucidchart.com/invitations/accept/b3c87035-88bd-47e7-b003-8810973ffc
 ## likesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|track|reference|null: false, foreign_key: true|
-|user|reference|null: false, foreign_key: true|
+|track|references|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
 
 ### Association
 belongs_to :user
@@ -65,8 +65,8 @@ has_many :tracks, through: :track-tags
 |Column|Type|Options|
 |------|----|-------|
 |text|string|null: false|
-|track|refernce|null: false, foreign_key: true|
-|user|reference|null: false, foreign_key: true|
+|track|refernces|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
 
 ### Association
 belongs_to :user
